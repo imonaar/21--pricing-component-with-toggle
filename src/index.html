@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Pricing component with toggle master</title>
+
+</head>
+<body>
+    <div class="main">
+        <div class="main__header">
+            <h1>Our Pricing</h1>
+        
+            <div class="main__toggle">
+                <label> Anually</label>
+                <input type="checkbox" name="toggle" id="toggle" role="switch" class="js-toggle">
+                <label for="toggle"> Monthly </label>
+            </div>
+        </div>
+
+        <div class="main__cards">
+            <div class="main__cards-card">
+                <h2>Basic</h2>
+                <div> $<span class="price basic-price">199.99</span> </div>
+                <ul>
+                    <li>500 GB Storage</li>
+                    <li>2 Users Allowed</li>
+                    <li> Send up to 3 GB</li>
+                </ul>
+                <button>Learn more</button>
+            </div>
+            <div class="main__cards-card">
+                <h2>Professional</h2>
+                <div> $ <span class="price professional-price">249.99</span> </div>
+                <ul>
+                    <li>1 TB Storage</li>
+                    <li>5 Users Allowed</li>
+                    <li> Send up to 10 GB</li>
+                </ul>
+                <button>Learn more</button>
+            </div>
+            <div class="main__cards-card">
+                <h2>Master</h2>
+                <div> $ <span class="price master-price">399.99</span> </div>
+                <ul>
+                    <li>2 TB Storage</li>
+                    <li>10 Users Allowed</li>
+                    <li> Send up to 20 GB</li>
+                </ul>
+                <button>Learn more</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
