@@ -151,6 +151,7 @@
                 font-weight: 700;
                 cursor: pointer;
                 transition: all 300ms ease;
+                border: 1px solid transparent;
 
                 &:active{
                     transform: scale(0.99);
@@ -158,7 +159,7 @@
 
                 &:hover{
                     background: transparent;
-                    border: 1px solid hsl(237, 63%, 64%);
+                    border-color:  hsl(237, 63%, 64%);
                     color: hsl(237, 63%, 64%);
                     transition: all 300ms ease;
                 }
@@ -179,9 +180,8 @@
                     &:hover{
                         color: white;
                         background: none;
-                        border: 1px solid white;
+                        border-color:  white;
                         transition: all 300ms ease;
-
                     }
                 }
             }

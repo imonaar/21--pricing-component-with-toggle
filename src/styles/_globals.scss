@@ -32,40 +32,16 @@ body{
     background-color: var(--Very-Light-Grayish-Blue);
     padding: 4rem 1.5rem;
 
-    &::before{
-        content: '';
-        position: absolute;
-        top: -3%;
-        right: -53%;
-        inline-size: 100%;
-        block-size: 100%;
-        background: url('../../images/bg-top.svg') ;
-        background-repeat: no-repeat;
-        background-size: 100%;
+    background-image: url('../../images/bg-top.svg'), url('../../images/bg-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: 200px 0%, 10000% 10000%;
+
+    @include tabplus{
+        background-position: top right, bottom left;
     }
 
     @include tabplus{
         padding-top: 4.4375rem;
-
-        &::before{
-            top:0%;
-            right: -74%;
-            background-size: 27%;
-        }
-
-        &::after{
-            content: '';
-            position: absolute;
-            left: 0%;
-            bottom: -10%;
-            
-            inline-size: 50%;
-            block-size: 50%;
-            background: url('../../images/bg-bottom.svg');
-            background-repeat: no-repeat;
-            background-size: 50% 94%;
-
-        }
     }
 }
 
